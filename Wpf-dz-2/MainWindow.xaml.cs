@@ -23,6 +23,18 @@ namespace Wpf_dz_2
         public MainWindow()
         {
             InitializeComponent();
+            Title = "Убегатор";
+        }
+
+        private void static_enter(object sender, MouseEventArgs e)
+        {
+            Random r = new Random();
+            Canvas cnv = this.Content as Canvas;
+            int _left = r.Next( Convert.ToInt32(cnv.ActualWidth - statik.ActualWidth));
+            int _top = r.Next( Convert.ToInt32(cnv.ActualHeight - statik.ActualHeight));
+            // statik.Margin = new Thickness(_left,_top,0,0);
+            Canvas.SetTop(statik, _top);
+            Canvas.SetLeft(statik, _left);
         }
     }
 }

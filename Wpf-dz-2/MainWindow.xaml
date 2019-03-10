@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_dz_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="360" Width="600" x:Name="domik_statika">
+    <Canvas>
+        <TextBox x:Name="statik" Width="50" Height="50" MouseEnter="static_enter" MouseMove="static_enter" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Canvas>
 </Window>
